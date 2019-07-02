@@ -1,9 +1,9 @@
 package mediator;
 
-public abstract class Autor {
+public abstract class Pessoa {
 	protected Mediator mediator;
 	
-	public Autor(Mediator m) {
+	public Pessoa(Mediator m) {
 		mediator = m;
 	}
 	
@@ -11,5 +11,5 @@ public abstract class Autor {
 		mediator.escrever(conteudo, this);
 	}
 	
-	public abstract void revisar(String conteudo);
+	public abstract void recebido(String conteudo);
 }
